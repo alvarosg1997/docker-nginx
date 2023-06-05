@@ -36,8 +36,8 @@ services:
     volumes:
       - ./www:/usr/share/nginx/html:ro
     environment:
-      - VIRTUAL_HOST=orsatecsl.es,alvaro.orsatecsl.es
-      - LETSENCRYPT_HOST=orsatecsl.es,alvaro.orsatecsl.es
+      - VIRTUAL_HOST=alvaro.orsatecsl.es
+      - LETSENCRYPT_HOST=alvaro.orsatecsl.es
       - LETSENCRYPT_EMAIL=info@orsatecsl.es
     depends_on:
       - nginx-proxy
