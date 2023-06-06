@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Visita</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="docker.html">Docker</a></li>
+      <li><a href="kubernetes.html">Kubernetes</a></li>
+      <li><a href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-gonz%C3%A1lez-9325b81a9/">LinkedIn</a></li>
+      <li><a href="https://www.github.com/alvarosg1997">GitHub</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Mi Trayectoria en la Informática</h1>
+    <p>Comencé mi andadura en el campo de la informática a través del ciclo superior de ASIR (Administración de Sistemas Informáticos en Red). Durante este período de formación, adquirí conocimientos fundamentales sobre redes, sistemas operativos y administración de servidores.</p>
+    <p>Después de finalizar mis prácticas, decidí seguir trabajando en el mismo lugar donde las realicé. Fue allí donde descubrí el fascinante mundo de Amazon Web Services (AWS), una de las plataformas líderes en servicios en la nube.</p>
+    <p>Al principio, utilicé un panel de control Plesk montado en una instancia EC2 de AWS, que me permitía gestionar sitios web y servicios de alojamiento para nuestros clientes de manera sencilla y eficiente.</p>
+    <p>Con el tiempo, fui adquiriendo más conocimientos y habilidades, lo que me permitió llevar nuestras infraestructuras al siguiente nivel. Implementé un entorno de Integración Continua / Entrega Continua (CI/CD) utilizando diversas herramientas de AWS.</p>
+    <p>En primer lugar, utilicé AWS CodePipeline, un servicio de entrega continua que se encarga de automatizar el flujo de trabajo desde el código fuente hasta la implementación. Con CodePipeline, los desarrolladores podían realizar commits de su código en repositorios de control de versiones, y el servicio se encargaba de orquestar la compilación, prueba y despliegue automático de la aplicación.</p>
+    <p>Para la compilación de código, utilicé AWS CodeBuild, un servicio de compilación totalmente administrado y escalable. CodeBuild me permitió configurar entornos de compilación personalizados y procesar el código fuente utilizando herramientas y marcos de trabajo populares.</p>
+    <p>En cuanto a la infraestructura de despliegue, utilicé un grupo de autoescalado de instancias EC2. Este grupo se encargaba de mantener el equilibrio de carga y la escalabilidad automática de las instancias, asegurando que la aplicación estuviera siempre disponible y pudiera manejar cargas de trabajo variables.</p>
+    <p>Para garantizar la seguridad y el rendimiento de nuestras API, utilicé un balanceador de carga  (ELB) de AWS con soporte para SSL/TLS. Esto permitía el enrutamiento inteligente del tráfico y la terminación segura de las conexiones, protegiendo la integridad de los datos.</p>
+    <p>En cuanto al front-end de la aplicación, decidí utilizar AWS Amplify, un servicio de alojamiento web rápido y escalable que simplifica la implementación y la entrega de aplicaciones estáticas y dinámicas. Amplify me permitió desplegar y gestionar fácilmente la interfaz de usuario de la aplicación, ofreciendo una experiencia fluida a los usuarios.</p>
+    <p>En lo que respecta a la base de datos, opté por utilizar un contenedor de Docker con MongoDB, una base de datos NoSQL ampliamente utilizada. Para garantizar la persistencia y la disponibilidad de los datos, asocié un volumen EBS (Elastic Block Store) a este contenedor de MongoDB. De esta manera, en caso de que ocurriera alguna incidencia con la instancia EC2, era posible levantar rápidamente otro contenedor Docker idéntico y asignarle ese volumen EBS, asegurando así la continuidad de los datos.</p>
+    <p>Además de estas experiencias con AWS, también enfrenté y superé desafíos importantes en mi trayectoria. Uno de los ejemplos más destacados fue la recuperación de un servidor corrompido debido a un ataque de ransomware. Para evitar pérdidas de datos, implementé un sistema de copias de seguridad automatizado utilizando un NAS (Network-Attached Storage) y AWS S3 (Simple Storage Service). Este sistema permitió realizar copias de seguridad periódicas de los datos del servidor y, en caso de una falla catastrófica, pude recuperar la copia de seguridad y restaurarla en una nueva instancia EC2 en un tiempo récord, garantizando la continuidad del negocio y evitando pérdidas significativas de ventas en las 60 tiendas asociadas.</p>
+    <p>Estas experiencias me han brindado un sólido conocimiento y habilidades prácticas en el campo de la informática, especialmente en lo que respecta a la administración de sistemas, la arquitectura en la nube y la implementación de soluciones escalables y seguras en AWS. Sigo aprendiendo y explorando nuevas tecnologías, como Docker, Kubernetes y más, para seguir creciendo en este apasionante campo.</p>
+    <div class="neon-box">
+      <div class="link-container">
+        <a class="neon-link" href="https://www.linkedin.com/in/%C3%A1lvaro-s%C3%A1nchez-gonz%C3%A1lez-9325b81a9/" target="_blank"><img src="/IMAGENES/linkedin.png" alt="LinkedIn"></a>
+        <a class="neon-link" href="https://www.github.com/alvarosg1997"target="_blank"><img src="/IMAGENES/github.png" alt="GitHub"></a>
+        <a class="neon-link" href="docker.html"><img src="/IMAGENES/docker.png" alt="Docker"></a>
+        <a class="neon-link" href="kubernetes.html"><img src="/IMAGENES/kubernetes.png" alt="Kubernetes"></a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="docker-compose.js"></script>
+</body>
+</html>
